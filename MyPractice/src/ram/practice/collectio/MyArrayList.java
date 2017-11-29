@@ -39,8 +39,6 @@ public class MyArrayList {
 	
 	public Object remove(int index){
 		
-	
-	
 		if(index < actSize){
 			
 	            Object obj = myStore[index];
@@ -70,6 +68,7 @@ public class MyArrayList {
 	public String toString(){
 		return Arrays.toString(myStore);
 	}
+	
 	public void display() {
         for (int i = 0; i < actSize; i++) {
                System.out.print(myStore[i] + " ");
@@ -88,13 +87,11 @@ public class MyArrayList {
 		ma.add(2);
 		ma.add(2);
 		
-		System.out.println(" Length of  "+ ma.size());
-	
-	//	ma.remove(1);
-	//	System.out.println(" Elements in the array  "+ ma.toString());
 		
+		System.out.println(" Length of  "+ ma.size());
 		System.out.println(" Length after removing an element  "+ ma.size());
 		System.out.println(" Indexed Element in the array  "+ ma.get(0));
+		
 		
 		ma.display(); 
 
