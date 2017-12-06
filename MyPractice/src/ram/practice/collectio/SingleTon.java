@@ -4,6 +4,7 @@ public class SingleTon {
 
 	private static SingleTon s = null;
 	
+	String r ;
 	private SingleTon(){
 		
 	}
@@ -11,10 +12,9 @@ public class SingleTon {
 	public static SingleTon getInstance(){
 		
 		if ( s == null){
-			return new SingleTon();
-		}else{
-			return s;
+			s =  new SingleTon();
 		}
+		return s;
 	}
 	
 	public static void main(String[] args) {
